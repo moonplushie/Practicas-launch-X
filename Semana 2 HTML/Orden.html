@@ -1,0 +1,125 @@
+<!-- Orden -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de orden pastel</title>
+</head>
+<style>
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(232, 163, 163);
+            padding: 30px;
+            text-align: left;
+            font-size: 20px;
+            color: white;
+        }
+        header {
+            background-color: rgb(249, 177, 177);
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <img class="logo" alt="LOGO" src="/images/LogoPasteleria" width="100px" height="100px">  
+                <p>&nbsp; &nbsp;<a href="Cuenta.html">CUENTA</a>&nbsp; &nbsp;<a href="Orden.html">PERSONALIZE SU ORDEN</a></p>
+                <p></p>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Ichigo's Pasteleria Orden</h1>
+    <form action="/accion.js" id="form1" method="post">
+    <!-- Informacion de contacto -->
+    <label for="ClienteN"> Nombre del solicitante</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="ClienteN" name="ClienteN">
+    <br>
+    <label for="Correo"> Correo electronico</label>
+    <br>
+    <input type="email" id="correo" name="correo">
+    <br>
+    <label for="ClienteNu"> Telefono de contacto</label>
+    <br>
+    <input type="tel" id="ClienteNu" name="ClienteNu" maxlength="10">
+    <h2>Fecha de entrega</h2>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <br>
+
+    
+    <!-- sabor de pastel -->
+    <h2>Selecione tipo de Pastry</h2>
+    <label for="Pan">Elige tu tipo de Pan</label><br>
+    <input list="Pan">
+    <datalist id="Pan">
+        <option value="Pastel">
+        <option value="Brownie">
+        <option value="Pay">
+    </datalist>
+    <br><br>
+
+    <!-- sabor de pastel -->
+    <h2>Seleccione sabor del Bizcocho</h2>
+    <input type="checkbox" id="topping1" name="topping1" value="Vainilla">
+    <label for="topping1">Bizcocho de Vainilla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Chocolate">
+    <label for="topping2">Bizcocho de Chocolate</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Naranja">
+    <label for="topping3">Bizcocho de Naranja</label><br><br>
+
+    <!-- Betun -->
+    <h2>Seleccione sabor del Betun</h2>
+    <input type="checkbox" id="betun1" name="betun1" value="Vainilla">
+    <label for="betun">Sabor Vainilla</label><br>
+    <input type="checkbox" id="betun2" name="betun2" value="Chocolate">
+    <label for="betun2">Sabor Chocolate</label><br>
+    <input type="checkbox" id="betun3" name="betun3" value="Galleta">
+    <label for="betun3">Sabor Galleta</label><br>
+    <input type="checkbox" id="betun4" name="betun4" value="Fondant">
+    <label for="betun4">Fondant de bombon</label><br>
+    <input type="checkbox" id="betun5" name="betun5" value="crema">
+    <label for="betun5">Crema batida</label><br>
+    <input type="checkbox" id="betun6" name="betun6" value="Quesoc">
+    <label for="topping6">Quesocrema</label><br>
+    <br>
+    <!-- Adornos -->
+    <h2>Seleccione Adornos adicionales</h2>
+    <input type="checkbox" id="ado1" name="topping1" value="Velas">
+    <label for="ado1">Velitas decorativas</label><br>
+    <input type="checkbox" id="ado2" name="ado2" value="Flores">
+    <label for="ado2">Flores de azucar</label><br>
+    <input type="checkbox" id="ado3" name="ado3" value="Figurines">
+    <label for="ado3">Figuras de Fondant</label><br>
+    <input type="checkbox" id="ado4" name="ado4" value="confi">
+    <label for="ado4">Funfetti</label><br>
+    <br>
+  <h2>Comentarios adicionales</h2>
+   <input type="text" id="Input1" name="Input1" size="30" >
+   <br><br>
+   <h2>Foto de referencia</h2>
+   <input type="file" id="archivo1" name="archivo1" multiple><br>
+   
+    <input type="submit" value="Submit">
+    <input type="reset"><br>
+
+    
+</form>
+</body>
+</html>
